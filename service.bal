@@ -4,7 +4,7 @@ import ballerina/graphql;
 import ballerina/graphql.subgraph;
 
 @subgraph:Subgraph
-service graphql:Service on new graphql:Listener(9093) {
+service graphql:Service "/reviews" on new graphql:Listener(9093) {
 
     # Returns a list of reviews
     # + return - List of reviews
